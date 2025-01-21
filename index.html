@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QA Report</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="info">
+        <h2 class="info__title">Team</h2>
+        <div class="team">
+          <div class="participant">
+            <p class="participant__job_title">QA Manager:</p>
+            <div class="participant__person">
+              <p class="participant__name">Ivan Ivanov</p>
+              <a href="#" class="paticioant__link">(scsf)</a>
+            </div>
+          </div>
+          <div class="participant">
+            <p class="participant__job_title">QA Manager:</p>
+            <div class="participant__person">
+              <p class="participant__name">Ivan Ivanov</p>
+              <a href="#" class="paticioant__link">(scsf)</a>
+            </div>
+          </div>
+        </div>
+        <div class="separator"></div>
+      </section>
+      <section class="main_section">
+        <div>
+          <h3 class="main_section__title">Project QA</h3>
+          <p class="small_text">Product version: 0.0.1</p>
+        </div>
+        <div class="summary">
+          <h4 class="summary__subtitle">General quality analysis</h4>
+          <p>
+            The overall quality of the application can be estimated as Low. The
+            total number of defects is 363. Functional defects prevail, 18 of
+            them have the Critical severity and 45 defects gain the Major
+            severity. The majority of defects is opened for modules "Module 2"
+            and "Log In & Log Out & Sign Up". A detailed quality analysis is
+            presented below.
+          </p>
+        </div>
+        <h2 class="main__title">Detailed quality analysis</h2>
+        <div class="separator"></div>
+        <h4 class="main__subtitle">The total number of defects by severity</h4>
+        <div class="chart_container">
+          <canvas id="defectsChart" class="doughnut_chart"></canvas>
+          <p class="chart_description">
+            The chart shows the statistics of defects by the degree of the
+            negative impact they have on the application. Almost
+            <span class="highlighter">20%</span> of issues have Critical and
+            Major severity. Minor (44%) defects prevail.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <script src="./script.js"></script>
+</html>
