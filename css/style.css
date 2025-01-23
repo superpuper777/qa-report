@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
@@ -66,6 +65,11 @@ fieldset {
   ); /* Градиент сверху вниз */
 }
 
+.horizontal_bar_chart {
+  width: 350px;
+  height: 350px;
+}
+
 .highlighter {
   font-weight: 700;
 }
@@ -114,6 +118,7 @@ fieldset {
   padding: 20px;
   background: #000;
   color: #f9f9f9;
+  height: 100vh;
 }
 
 .info_logo__container {
@@ -137,6 +142,11 @@ fieldset {
   font-weight: 200;
   margin-bottom: 20px;
 }
+
+.info__dates {
+  display: flex;
+  justify-content: space-between;
+}
 .team {
   display: flex;
   flex-direction: column;
@@ -152,7 +162,8 @@ fieldset {
   gap: 5px;
 }
 
-.participant__job_title {
+.participant__job_title,
+.testing_dates__title {
   color: #4684cc;
 }
 
@@ -169,5 +180,17 @@ fieldset {
 }
 
 .small_text {
+  color: #4684cc;
+}
+
+.table_rows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.table_row {
+  font-size: 22px;
   color: #4684cc;
 }
