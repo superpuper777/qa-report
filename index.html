@@ -10,8 +10,18 @@
   <body>
     <main class="main">
       <section class="info">
-        <h2 class="info__title">Team</h2>
+        <div class="info_logo__container">
+          <h1>QA <br />TEAM</h1>
+          <div class="separator-vertical"></div>
+          <h4 class="info_logo__sub">
+            <span>Software</span>
+            <span>Testing</span>
+            <span>Company</span>
+          </h4>
+        </div>
+
         <div class="team">
+          <h2 class="info__title">Team</h2>
           <div class="participant">
             <p class="participant__job_title">QA Manager:</p>
             <div class="participant__person">
@@ -37,12 +47,18 @@
         <div class="summary">
           <h4 class="summary__subtitle">General quality analysis</h4>
           <p>
-            The overall quality of the application can be estimated as Low. The
-            total number of defects is 363. Functional defects prevail, 18 of
-            them have the Critical severity and 45 defects gain the Major
-            severity. The majority of defects is opened for modules "Module 2"
-            and "Log In & Log Out & Sign Up". A detailed quality analysis is
-            presented below.
+            The overall quality of the application can be estimated as
+            <span class="highlighter">Low</span>. The total number of defects is
+            <a href="your-link-url" target="_blank">363</a>. Functional defects
+            prevail, 18 of them have the Critical severity and
+            <a href="your-link-url" target="_blank">45</a> defects gain the
+            Major severity. The majority of defects is opened for modules "<a
+              href="your-link-url"
+              target="_blank"
+              >Module 2</a
+            >" and "<a href="your-link-url" target="_blank"
+              >Log In & Log Out & Sign Up</a
+            >". A detailed quality analysis is presented below.
           </p>
         </div>
         <h2 class="main__title">Detailed quality analysis</h2>
@@ -53,8 +69,29 @@
           <p class="chart_description">
             The chart shows the statistics of defects by the degree of the
             negative impact they have on the application. Almost
-            <span class="highlighter">20%</span> of issues have Critical and
-            Major severity. Minor (44%) defects prevail.
+            <span class="highlighter">20%</span> of issues have
+            <a href="your-link-url" target="_blank">Critical</a> and
+            <a href="your-link-url" target="_blank">Major</a>
+
+            severity. <a href="your-link-url" target="_blank">Minor</a> (<span
+              class="highlighter"
+              >44%</span
+            >) defects prevail.
+          </p>
+        </div>
+        <h4 class="main__subtitle">The total number of defects by platform</h4>
+        <div class="chart_container">
+          <canvas id="verticalBarChart" class="vertical_bar_chart"></canvas>
+          <p class="chart_description">
+            The chart presents the ratio of defects by platform. For
+            <span class="highlighter">Android</span> platform
+            <a href="your-link-url" target="_blank">210 issues</a> were found,
+            which is almost <span class="highlighter">40%</span> more compared
+            to <span class="highlighter">iOS</span> (<a
+              href="your-link-url"
+              target="_blank"
+              >153 issues</a
+            >).
           </p>
         </div>
       </section>

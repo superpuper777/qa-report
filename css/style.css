@@ -29,7 +29,8 @@ button {
 
 a {
   /* text-decoration: none; */
-  color: inherit;
+  color: #4684cc;
+  font-weight: 600;
 }
 
 ul {
@@ -53,11 +54,28 @@ fieldset {
   background: linear-gradient(to right, pink, violet, blue);
 }
 
+.separator-vertical {
+  height: 60%; /* Высота на весь контейнер */
+  width: 1.2px;
+  margin: 0 20px; /* Отступы по бокам */
+  background: linear-gradient(
+    to bottom,
+    pink,
+    violet,
+    blue
+  ); /* Градиент сверху вниз */
+}
+
 .highlighter {
   font-weight: 700;
 }
 
 .doughnut_chart {
+  width: 350px;
+  height: 350px;
+}
+
+.vertical_bar_chart {
   width: 350px;
   height: 350px;
 }
@@ -96,6 +114,23 @@ fieldset {
   padding: 20px;
   background: #000;
   color: #f9f9f9;
+}
+
+.info_logo__container {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.info_logo__sub {
+  font-size: 14px;
+  font-weight: 100;
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
+  margin: 0;
 }
 
 .info__title {
