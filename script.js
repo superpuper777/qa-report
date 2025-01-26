@@ -285,3 +285,15 @@ modulesData.forEach((module, index) => {
   legendItem.appendChild(legendText);
   customLegend.appendChild(legendItem);
 });
+
+document.getElementById('savePDF').addEventListener('click', () => {
+  const element = document.getElementById('content'); // Контейнер для сохранения
+  const options = {
+    filename: 'example.pdf',
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: 'mm', format: 'legal', orientation: 'portrait' },
+  };
+
+  html2pdf().set(options).from(element).save();
+});

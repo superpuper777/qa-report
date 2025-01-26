@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QA Report</title>
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main class="main">
+    <main class="main" id="content">
       <section class="info">
         <div class="info_logo__container">
           <h1>QA <br />TEAM</h1>
@@ -54,23 +53,29 @@
           </div>
           <div class="table_rows">
             <a href="#" class="table_row__link">DEFECT-20</a>
-            <p class="table_row__text">Critical</p>
+            <p class="table_row__text">
+              <span class="dot critical"></span>Critical
+            </p>
           </div>
           <div class="table_rows">
             <a href="#" class="table_row__link">DEFECT-128</a>
-            <p class="table_row__text">Critical</p>
+            <p class="table_row__text">
+              <span class="dot critical"></span>Critical
+            </p>
           </div>
           <div class="table_rows">
             <a href="#" class="table_row__link">DEFECT-261</a>
-            <p class="table_row__text">Critical</p>
+            <p class="table_row__text"><span class="dot minor"></span>Minor</p>
           </div>
           <div class="table_rows">
             <a href="#" class="table_row__link">DEFECT-423</a>
-            <p class="table_row__text">Major</p>
+            <p class="table_row__text"><span class="dot major"></span>Major</p>
           </div>
           <div class="table_rows">
             <a href="#" class="table_row__link">DEFECT-422</a>
-            <p class="table_row__text">Major</p>
+            <p class="table_row__text">
+              <span class="dot average"></span>Average
+            </p>
           </div>
         </div>
       </section>
@@ -158,8 +163,10 @@
         </div>
       </section>
     </main>
+    <button id="savePDF" class="fixed-button">Сохранить в PDF</button>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="./script.js"></script>
 </html>
