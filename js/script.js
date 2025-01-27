@@ -1,11 +1,41 @@
 const ctx = document.getElementById('defectsBySeverity').getContext('2d');
 
+// Общее количество задач
+const totalTasks = 200;
+
+// Количество задач в каждой категории
+const bugs = 5;
+const featureRequests = 25;
+const improvements = 50;
+const others = 30;
+
+// Функция для расчета процента
+function calculatePercentage(categoryTasks, totalTasks) {
+  return ((categoryTasks / totalTasks) * 100).toFixed(2); // округляем до 2 знаков после запятой
+}
+
+// Расчет процентов
+const bugsPercentage = calculatePercentage(bugs, totalTasks);
+const featureRequestsPercentage = calculatePercentage(
+  featureRequests,
+  totalTasks
+);
+const improvementsPercentage = calculatePercentage(improvements, totalTasks);
+const othersPercentage = calculatePercentage(others, totalTasks);
+
+const newData = [
+  bugsPercentage,
+  featureRequestsPercentage,
+  improvementsPercentage,
+  othersPercentage,
+];
+
 const defectsData = {
   labels: ['Critical', 'Major', 'Average', 'Minor'],
   datasets: [
     {
       label: 'The number of defects',
-      data: [8, 22, 21, 49],
+      data: newData,
       backgroundColor: [
         'rgba(255, 99, 132, 0.7)',
         'rgba(54, 162, 235, 0.7)',
@@ -13,7 +43,7 @@ const defectsData = {
         'rgba(75, 192, 192, 0.7)',
         'rgba(153, 102, 255, 0.7)',
       ],
-      borderWidth: 5,
+      borderWidth: 3,
     },
   ],
 };
@@ -31,7 +61,7 @@ new Chart(ctx, {
           pointStyle: 'circle',
           color: '#000',
           font: {
-            size: 14,
+            size: 9,
           },
         },
       },
@@ -49,6 +79,7 @@ new Chart(ctx, {
         },
         color: '#fff',
         font: {
+          size: 8,
           weight: 'bold',
         },
       },
@@ -143,7 +174,7 @@ const defectsData2 = {
         'rgba(75, 192, 192, 0.7)',
         'rgba(153, 102, 255, 0.7)',
       ],
-      borderWidth: 5,
+      borderWidth: 3,
     },
   ],
 };
@@ -161,7 +192,7 @@ new Chart(ctx2, {
           pointStyle: 'circle',
           color: '#000',
           font: {
-            size: 14,
+            size: 9,
           },
         },
       },
@@ -171,6 +202,7 @@ new Chart(ctx2, {
         },
         color: '#fff',
         font: {
+          size: 8,
           weight: 'bold',
         },
       },

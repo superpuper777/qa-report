@@ -92,6 +92,7 @@ fieldset {
   align-items: center;
   page-break-inside: avoid;
 }
+
 .chart_description {
   width: 50%;
 }
@@ -180,6 +181,10 @@ fieldset {
   flex: 1;
 }
 
+.title2 {
+  margin-top: 60px;
+}
+
 .main_section__title {
   font-size: 20px;
   font-weight: 300;
@@ -197,7 +202,7 @@ fieldset {
 }
 
 .table_row {
-  font-size: 22px;
+  font-size: 14px;
   color: #4684cc;
 }
 
