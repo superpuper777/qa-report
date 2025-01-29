@@ -106,6 +106,7 @@
         <h4 class="main__subtitle">The total number of defects by severity</h4>
         <div class="chart_container">
           <canvas id="defectsBySeverity" class="doughnut_chart"></canvas>
+          <div id="defectsBySeverityLegend"></div>
         </div>
 
         <h4 class="main__subtitle">The total number of defects by platform</h4>
@@ -129,18 +130,7 @@
         <h4 class="main__subtitle">The total number of defects by something</h4>
         <div class="chart_container">
           <canvas id="defectsBySmth" class="doughnut_chart"></canvas>
-          <p class="chart_description">
-            The chart shows the statistics of defects by the degree of the
-            negative impact they have on the application. Almost
-            <span class="highlighter">20%</span> of issues have
-            <a href="your-link-url" target="_blank">Critical</a> and
-            <a href="your-link-url" target="_blank">Major</a>
-
-            severity. <a href="your-link-url" target="_blank">Minor</a> (<span
-              class="highlighter"
-              >44%</span
-            >) defects prevail.
-          </p>
+          <div id="defectsBySmthLegend"></div>
         </div>
         <h4 class="main__subtitle">
           The total number of defects by components
@@ -160,5 +150,6 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  <script src="./js/script.js"></script>
+  <!-- <script src="./js/script.js"></script> -->
+  <script type="module" src="./js/main.js"></script>
 </html>
