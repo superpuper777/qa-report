@@ -66,8 +66,8 @@ fieldset {
 }
 
 .horizontal_bar_chart {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   /* page-break-before: auto;
   page-break-after: always; */
 }
@@ -77,8 +77,8 @@ fieldset {
 }
 
 .doughnut_chart {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 .vertical_bar_chart {
@@ -86,10 +86,23 @@ fieldset {
   height: 350px;
 }
 
+.horizontal_bar_chart {
+  width: 400px;
+  height: 350px;
+}
+
 .chart_container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  page-break-inside: avoid;
+}
+
+.chart_container-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   page-break-inside: avoid;
 }
 
