@@ -1,4 +1,4 @@
-import { createDoughnutChart } from './doughnutСhart.js';
+import { createDoughnutChart } from './doughnutChart.js';
 import { defects1, defects2, colors1, colors2 } from './chartData.js';
 
 document.addEventListener('DOMContentLoaded', () => {
