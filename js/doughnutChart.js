@@ -42,7 +42,7 @@ function createCustomLegend(legendId, taskCounts, colors) {
     // Текст с ссылкой
     const legendText = document.createElement('span');
     legendText.innerHTML = `${name} - <a href="${link}" style="text-decoration: underline; color: blue;">(${count} cases)</a>`;
-    legendText.style.fontSize = '14px';
+    legendText.style.fontSize = '12px';
     legendText.style.color = '#000';
 
     legendItem.appendChild(colorCircle);
@@ -97,7 +97,7 @@ function createDoughnutChart(chartId, legendId, taskCounts, colors) {
             return `${percentageData[index]}%`;
           },
           color: '#fff',
-          font: { size: 8, weight: 'bold' },
+          font: { size: 10, weight: 'bold' },
         },
       },
     },

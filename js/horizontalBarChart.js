@@ -25,7 +25,7 @@ function createHorizontalBarLegend(legendId, modules, backgroundColors) {
     // Текст с ссылкой
     const legendText = document.createElement('span');
     legendText.innerHTML = `${module.name} - <a href="${module.link}" style="text-decoration: underline; color: blue;">(${module.maxCases} cases)</a>`;
-    legendText.style.fontSize = '14px';
+    legendText.style.fontSize = '12px';
     legendText.style.color = '#000';
 
     legendItem.appendChild(colorBox);
